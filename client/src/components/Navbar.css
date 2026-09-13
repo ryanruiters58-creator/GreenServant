@@ -1,0 +1,64 @@
+.navbar {
+  background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navbar-menu a, .navbar-menu button {
+  color: white;
+  transition: opacity 0.3s;
+}
+
+.navbar-menu a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.navbar-user {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
